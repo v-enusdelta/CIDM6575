@@ -16,13 +16,13 @@ Consider the following use-case for a prototype representative project. My depar
 ## Work Samples
 The following work samples highlight some of the key skills gained during these courses.
 
-![Iris clustering in Rapidminer]( 1_rapidminer1-iriscluster.png)  
+![Iris clustering in Rapidminer](images/1_rapidminer1-iriscluster.png)  
 This assignment in *Seminar in Data Analytics* used Rapidminer AI Studio to extract, transform, and load raw data; and produce data visualizations. It also focused on descriptive modeling using classification and regression techniques to estimate which instances were most likely to belong to the one of three different species in the *Iris* genus: *setsosa*, *versicolour*, or *virginica*. 
 
-![Iris clustering in Tableau]( 1_tableau1-iriscluster.png)  
+![Iris clustering in Tableau](images/1_tableau1-iriscluster.png)  
 This exercise was recreated using Tableau, which produced a similar chart but went through a different process. One of the goals of this assignment was to evaluate which tool was better for conducting classification and regression techniques. Overall, I felt that Rapidminer was easier to work with since many of the operations were predefined and, if not, a custom operation could be used. However, Tableau produced a better data visual and had more options to customize the look and feel of the chart. In practice, I would use Rapidminer to conduct ETL and connect the results to Tableau to customize the chart.
 
-![52 week high-low bar chart in excel]( 2_ppt1-100barchart.jpg)  
+![52 week high-low bar chart in excel](images/2_ppt1-100barchart.jpg)  
 This assignment taught data visualization principles by evaluating and recreating charts in Microsoft Excel. In this graph, I practiced the following skills: reducing visual clutter (increasing the data-ink ratio) by eliminating gridlines; choosing appropriate chart-types (by choosing a categorical bar chart, this allows the viewer to easily read the categories); and minimizing color choices by only choosing two colors and ordering in descending order. This chart recreated a cluttered and confusing dynamic ribbon chart from [this website]( https://public.flourish.studio/visualisation/21013722/?utm_source=trendswithnofriends.stocktwits.com&utm_medium=referral&utm_campaign=phibro-animal-health-pops-10). Notably, since many of my professional colleagues do not know how to use dynamic Tableau charts, it was important to be able to convert dynamic charts into static ones.
 
 ## Conclusion
