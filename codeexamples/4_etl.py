@@ -1,5 +1,7 @@
 # Extract data from the raw_data.csv file
-def load(data_frame, file_name):
+def extract(file_name):
+  return pd.read_csv(file_name)
+  
   # Write cleaned_data to a CSV using file_name
   data_frame.to_csv(file_name)
   print(f"Successfully loaded data to {file_name}")
