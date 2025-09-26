@@ -1,0 +1,187 @@
+# Software Systems
+## Introduction
+I completed the *Technical Foundations in Computer Information Systems* and * Software Engineering and Systems Development* courses for the Software Systems curriculum area. These two courses introduced and exposed me to new topics, skills, and applications at every stage. 
+
+I learned several skills including using Microsoft Visual Studio Code (VS Code) to write scripts in HTML, CSS, SQL, Markdown, and Python; integrating Git and GitHub for version control; using agile development modeling for requirements gathering and documentation. [Datacamp](https://www.datacamp.com/) was a great knowledge source for much of this work, as well as [FreeCodeCamp]( https://www.freecodecamp.org/) and the course textbook, *Python Architecture Patterns* (Jaime Bueleta).
+
+Due to the sheer depth of information presented, I felt there was not enough time for me to master the following topics: discussing ethical aspects of data science and software engineering, incorporating Kubernetes into a stack, performing error handling in Python, and explaining RESTful frameworks to non-technical stakeholders. However, I feel that these are minor knowledge gaps compared to other curriculum areas (e.g., networking and cybersecurity).
+
+Prior to these courses, I had very little exposure to the topics and skills previously discussed. As a state employee, I do not have permission to use VS Code, Git, Github, or any of the programming languages I learned in my coursework to optimize my data analytics work. This was quite shocking to learn, espeically since there is no federal restriction on using some of these tools. I was further shocked to learn that I can’t even run Java in my command terminal. Because of the knowledge I learned in these courses, I realized how oppressive and fearful my state agency is about incorporating basic, standard tools for data analysis and how limited my opportunities for growth are if I remain in this job. In other states, public health agencies leverage Python, R, and other statistical packages; write their own APIs for public health data sets; and collaborate internally and externally to improve population health outcomes and their own internal processes. I am actively applying for jobs that will allow me to use the skills I learned in these classes.
+
+## Integration
+For this section, I define software systems as integrating two or more applications to achieve a business objective. Software systems naturally integrate with data analytics, data management, and networking/cybersecurity because these are all core components of software systems. Computers must be networked in some fashion for a software *system* to integrate. Furthermore, cybersecurity is required for some domains or is at least present as a core function of software. Software and software systems inherently manage data, especially transactions between one or more applications. Finally, some form of data analytics is required in these transactions, even if they are not processed into data insights. In this specific context, one application must read, write, replace, delete, or any number of operations on data from the other application. This fulfils the basic definition of data analytics, which is to extract useful knowledge from data.
+
+Continuing the prototype representative project from [Assignment1](assignment1.md); recall the primary objective is to survey senior leaders; summarize their top priorities for the next year; and deliver a presentation to executive leadership. While data analytics and data management handled the setup for data ingestion and ultimate output, software systems are present during these stages as well. One application was used as a survey tool, another to export the data into a variety of outputs, and three more to conduct data analysis and develop data visualizations and presentations. This is notable because if this survey is live or continuous, the data changes. To ensure the business products also change, software systems must be engineered correctly. This could take the form of scheduled jobs where survey data is loaded into the analytics and visualization applications on a predictable cadence such as nightly. Or it could be on-demand where the analyst must manually run the ETL pipeline. Another option is a live feed where the update is performed when a change is noticed in the survey data. This could be useful for long-term surveys like customer satisfaction.
+
+## Work Samples
+The following work samples highlight some of the key skills gained during these courses.
+
+```
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.label {
+  border: 2px solid black;
+  width: 270px;
+  margin: 20px auto;
+  padding: 0 7px;
+}
+
+header h1 {
+  text-align: center;
+  margin: -4px 0;
+  letter-spacing: 0.15px
+}
+
+p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.divider {
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.large {
+  height: 10px;
+}
+
+.large, .medium {
+  background-color: black;
+  border: 0;
+}
+
+.medium {
+  height: 5px;
+}
+
+.small-text {
+  font-size: 0.85rem;
+}
+
+.calories-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.calories-info h2 {
+  margin: 0;
+}
+
+.left-container p {
+  margin: -5px -2px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.calories-info span {
+  margin: -7px -2px;
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.indent {
+  margin-left: 1em;
+}
+
+.double-indent {
+  margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989;
+}
+```
+
+This CSS code block provides the colors, fonts, borders, padding, and other layout/styles for a basic Nutrition Label as part of an exercise from the [FreeCodeCamp]( https://www.freecodecamp.org/learn/2022/responsive-web-design/) Responsive Web Design course. 
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nutrition Label</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="label">
+    <header>
+      <h1 class="bold">Nutrition Facts</h1>
+      <div class="divider"></div>
+      <p>8 servings per container</p>
+      <p class="bold">Serving size <span>2/3 cup (55g)</span></p>
+    </header>
+    <div class="divider large"></div>
+    <div class="calories-info">
+      <div class="left-container">
+        <h2 class="bold small-text">Amount per serving</h2>
+        <p>Calories</p>
+      </div>
+      <span>230</span>
+    </div>
+    <div class="divider medium"></div>
+    <div class="daily-value small-text">
+      <p class="bold right no-divider">% Daily Value *</p>
+      <div class="divider"></div>
+      <p><span><span class="bold">Total Fat</span> 8g</span> <span class="bold">10%</span></p>
+      <p class="indent no-divider">Saturated Fat 1g <span class="bold">5%</span></p>
+      <div class="divider"></div>
+      <p class="indent no-divider"><span><i>Trans</i> Fat 0g</span></p>
+      <div class="divider"></div>
+      <p><span><span class="bold">Cholesterol</span> 0mg</span> <span class="bold">0%</span></p>
+      <p><span><span class="bold">Sodium</span> 160mg</span> <span class="bold">7%</span></p>
+      <p><span><span class="bold">Total Carbohydrate</span> 37g</span> <span class="bold">13%</span></p>
+      <p class="indent no-divider">Dietary Fiber 4g</p>
+      <div class="divider"></div>
+      <p class="indent no-divider">Total Sugars 12g</p>
+      <div class="divider double-indent"></div>
+      <p class="double-indent no-divider">Includes 10g Added Sugars <span class="bold">20%</span></p>
+      <div class="divider"></div>
+      <p class="no-divider"><span class="bold">Protein</span> 3g</p>
+      <div class="divider large"></div>
+      <p>Vitamin D 2mcg <span>10%</span></p>
+      <p>Calcium 260mg <span>20%</span></p>
+      <p>Iron 8mg <span>45%</span></p>
+      <p class="no-divider">Potassium 235mg <span>6%</span></p>
+    </div>
+    <div class="divider medium"></div>
+    <p class="note">* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily
+      diet. 2,000 calories a day is used for general nutrition advice.</p>
+  </div>
+</body>
+</html>
+```
+
+This HTML code block corresponds to the previous CSS code block and provides a hard-coded version of the Nutrition Label exercise. Combining these two files renders a webpage that looks like the image below.
+
+![Nutrition Label](images/5_nutritionlabeloutput.png)  
+
+Two other examples of my work in this course are the [Software Requirements for a Little Library tracking system]( https://github.com/v-enusdelta/CIDM6330-Project/blob/90162b28da70b89ac3a628fe8acc8fba1c5f6ed3/section1/README.md) and documentation for a [basic API using FastAPI]( https://github.com/v-enusdelta/CIDM6330-Project/blob/90162b28da70b89ac3a628fe8acc8fba1c5f6ed3/section2/README.md). These examples show my skills in creating readable, stylized markdown files in GitHub with embedded images, code blocks, and headings. They also demonstrate knowledge in creating agile modeling (activity diagram, class diagram, sequence diagram, component diagram, state machine diagram, and use case diagram); establishing a virtual environment; and writing CRUD operations in Python using Pydantic and FastAPI.
+
+## Conclusion
+As evidenced by this discussion, I feel I’ve built a strong foundation in Software Systems. These courses not only enhanced my technical skills but also gave me practical communication strategies to explain version control using Git and GitHub, agile development models, and popular applications for HTML, CSS, SQL, Markdown, and Python. Most importantly, I left with the confidence and motivation to continue refining my expertise through exploring personal projects and different kinds of job environments where these technologies are accepted as day-to-day tools.
+
+Some topics I plan to explore more in-depth are ethical aspects of data science and software engineering, engineering with Kubernetes, error handling in Python, and RESTful frameworks. I also look forward to developing my communication skills with non-technical stakeholders for these advanced topics.
