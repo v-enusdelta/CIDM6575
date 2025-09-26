@@ -16,7 +16,7 @@ Continuing the prototype representative project from [Assignment1](assignment1.m
 ## Work Samples
 The following work samples highlight some of the key skills gained during these courses.
 
-```
+```css
 * {
   box-sizing: border-box;
 }
@@ -115,7 +115,7 @@ p {
 
 This CSS code block provides the colors, fonts, borders, padding, and other layout/styles for a basic Nutrition Label as part of an exercise from the [FreeCodeCamp]( https://www.freecodecamp.org/learn/2022/responsive-web-design/) Responsive Web Design course. 
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
